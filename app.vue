@@ -1,5 +1,10 @@
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+  <ShellHeader />
+  <FrontpageHero />
+  <FrontpageAvailable />
+  <FrontpageServices />
+  <FrontpageFeaturedSkills />
+  <FrontpageQuestions />
+  <FrontpageContact />
+  <ShellFooter />
 </template>
