@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ["@nuxtjs/google-fonts", "@unocss/nuxt"],
+  modules: ["@nuxtjs/google-fonts", "@unocss/nuxt", "@nuxtjs/plausible"],
   postcss: {
     plugins: {
       "@unocss/postcss": {},
