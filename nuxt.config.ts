@@ -12,4 +12,7 @@ export default defineNuxtConfig({
       Inter: [400, 500, 600, 700],
     },
   },
+  plausible: {
+    apiHost: "https://danirod.dev",
+  },
 });
