@@ -1,7 +1,7 @@
 <template>
-  <FrontpageBlock title="Quick questions">
-    <details>
-      <summary>How much do your services cost?</summary>
+  <FrontpageBlock id="questions" class="text-copy" title="Quick questions">
+    <QuestionItem>
+      <QuestionTitle>How much do your services cost?</QuestionTitle>
       <p>
         Unfortunately, the answer is it depends. It is not possible to just
         throw a price tag, because there are many price ranges. Software and web
@@ -26,10 +26,12 @@
         you have an idea for something so that I can provide you a quote for
         free.
       </p>
-    </details>
+    </QuestionItem>
 
-    <details>
-      <summary>Do you rate by project or by hour / day / week?</summary>
+    <QuestionItem>
+      <QuestionTitle
+        >Do you rate by project or by hour / day / week?</QuestionTitle
+      >
       <p>
         Again, it depends. I prefer setting up hourly, daily, weekly or even
         monthly rates, because this allows you to only pay for the job that is
@@ -49,10 +51,12 @@
         project is to contact me so that I can advise about the options once I
         know about your project needs, no strings attached.
       </p>
-    </details>
+    </QuestionItem>
 
-    <details>
-      <summary>Will we have to sign an agreement or contract?</summary>
+    <QuestionItem>
+      <QuestionTitle
+        >Will we have to sign an agreement or contract?</QuestionTitle
+      >
       <p>
         Yes, that is expected. I don't work without prior agreement, as signing
         some kind of document is the only way both you and me can be clear in
@@ -75,10 +79,12 @@
         accept the agreement before the work starts, no strings attached until
         signature, and of course, at no cost.
       </p>
-    </details>
+    </QuestionItem>
 
-    <details>
-      <summary>My project already exists, can you work on my codebase?</summary>
+    <QuestionItem>
+      <QuestionTitle
+        >My project already exists, can you work on my codebase?</QuestionTitle
+      >
       <p>
         Of course I can. Say for example that you are already building something
         and you need more labour working on it, or that you inherited a codebase
@@ -93,10 +99,12 @@
         under new hardware, browsers or operating systems. Contact me explaining
         your needs and I'll give you more information about how can I help you.
       </p>
-    </details>
+    </QuestionItem>
 
-    <details>
-      <summary>Are you available as a contractor developer?</summary>
+    <QuestionItem>
+      <QuestionTitle
+        >Are you available as a contractor developer?</QuestionTitle
+      >
       <p>
         Yes, I can join your team as an external member, also known as a
         contractor. For example, if you need to back a team member that is in a
@@ -118,10 +126,10 @@
         experience with your software stack), contact me so that I can provide
         more information about that.
       </p>
-    </details>
+    </QuestionItem>
 
-    <details>
-      <summary>Do you offer maintenance contracts?</summary>
+    <QuestionItem>
+      <QuestionTitle>Do you offer maintenance contracts?</QuestionTitle>
       <p>
         If you want a maintenance contract, it can be added to your project and
         billed separately. I do not enforce them by default -once the project is
@@ -136,6 +144,6 @@
         required depending on your needs, even after the project is supposedly
         finished.
       </p>
-    </details>
+    </QuestionItem>
   </FrontpageBlock>
 </template>

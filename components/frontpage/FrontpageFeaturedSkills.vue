@@ -1,14 +1,24 @@
 <template>
-  <FrontpageBlock title="My favourite tools">
+  <FrontpageBlock id="skills" title="My favourite tools">
     <FrontpageBlockLead>
-      Here is a curated list of technologies where I work best. For cases where
-      I have full control over the technology stack (as in, we are not talking
-      about maintaining existing codebases), I'll probably just use one of these
-      if possible.
+      A curated list of technologies where I work best. For cases where I have
+      full control over the technology stack (as in, we are not talking about
+      maintaining existing codebases), I'd rather just use one of these if I
+      can.
     </FrontpageBlockLead>
 
     <SkillsFeatured media="left">
       <template #picture>
+        <source
+          srcset="~/assets/featured/rails@dark.svg"
+          media="(prefers-color-scheme: dark)"
+          type="image/svg+xml"
+        />
+        <source
+          srcset="~/assets/featured/rails@dark.png"
+          media="(prefers-color-scheme: dark)"
+          type="image/png"
+        />
         <source srcset="~/assets/featured/rails.svg" type="image/svg+xml" />
         <source srcset="~/assets/featured/rails.png" type="image/png" />
         <img src="~/assets/featured/rails.png" width="240" alt="Rails" />
@@ -26,6 +36,16 @@
 
     <SkillsFeatured media="right">
       <template #picture>
+        <source
+          srcset="~/assets/featured/nodejs@dark.svg"
+          media="(prefers-color-scheme: dark)"
+          type="image/svg+xml"
+        />
+        <source
+          srcset="~/assets/featured/nodejs@dark.png"
+          media="(prefers-color-scheme: dark)"
+          type="image/png"
+        />
         <source srcset="~/assets/featured/nodejs.svg" type="image/svg+xml" />
         <source srcset="~/assets/featured/nodejs.png" type="image/png" />
         <img src="~/assets/featured/nodejs.png" width="240" alt="NodeJS" />
@@ -42,6 +62,16 @@
 
     <SkillsFeatured media="left">
       <template #picture>
+        <source
+          srcset="~/assets/featured/nuxt@dark.svg"
+          media="(prefers-color-scheme: dark)"
+          type="image/svg+xml"
+        />
+        <source
+          srcset="~/assets/featured/nuxt@dark.png"
+          media="(prefers-color-scheme: dark)"
+          type="image/png"
+        />
         <source srcset="~/assets/featured/nuxt.svg" type="image/svg+xml" />
         <source srcset="~/assets/featured/nuxt.png" type="image/png" />
         <img src="~/assets/featured/nuxt.png" width="240" alt="Nuxt" />
@@ -58,11 +88,21 @@
 
     <SkillsFeatured media="right">
       <template #picture>
+        <source
+          srcset="~/assets/featured/go@dark.svg"
+          media="(prefers-color-scheme: dark)"
+          type="image/svg+xml"
+        />
+        <source
+          srcset="~/assets/featured/go@dark.png"
+          media="(prefers-color-scheme: dark)"
+          type="image/png"
+        />
         <source srcset="~/assets/featured/go.svg" type="image/svg+xml" />
         <source srcset="~/assets/featured/go.png" type="image/png" />
         <img src="~/assets/featured/go.png" width="240" alt="Go" />
       </template>
-      <SkillsTitle>Go, constained backends and real time solutions</SkillsTitle>
+      <SkillsTitle>Go, constained backends and real time services</SkillsTitle>
       <p>
         There are a couple of situations where it is more adequate to start from
         scratch using Go. For intensive applications that have higher

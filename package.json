@@ -10,7 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@iconify-json/simple-line-icons": "^1.1.5",
     "@nuxt/devtools": "latest",
+    "@nuxtjs/google-fonts": "^3.0.2",
+    "@unocss/nuxt": "^0.57.2",
+    "@unocss/postcss": "^0.57.3",
     "nuxt": "^3.8.1",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
