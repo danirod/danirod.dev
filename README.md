@@ -1,75 +1,23 @@
-# Nuxt 3 Minimal Starter
+# danirod.dev
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Yes, I made a new portfolio website for my freelance services. Features:
 
-## Setup
+- Not based on WordPress (I guess that is a feature for some).
+- In English (in a future revision, it will also be available in Spanish).
+- New domain, to keep the SEO clean.
 
-Make sure to install the dependencies:
+Powered by Nuxt 3 and UnoCSS.
 
-```bash
-# npm
-npm install
+## Commands
 
-# pnpm
-pnpm install
+- Setup: `npm install`
+- Run the server: `npm run dev`
+- Build the app: `npm run build`
+- Test in production: `npm run preview`
 
-# yarn
-yarn install
+## Known issues
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+In development mode on Firefox, the page sometimes freezes during a hot code
+reload. At first I thought it was @nuxtjs/i18n, so I removed it. Then I thought
+it was @unocss/transformer-compile-class, so I removed it. It still happens so
+I have no clue what is it.
