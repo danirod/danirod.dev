@@ -1,17 +1,27 @@
 {
-  "meta": {
-    "title": "Dani Rodríguez, Desarrollador Web Freelance",
-    "description": "Soy un desarrollador de software freelance y esta es mi web profesional. O dicho en plano: hago webs a cambio de dinero."
+  "ajax_form": {
+    "message_delivered": "¡Tu mensaje ha sido enviado!",
+    "server_error": "Ha habido un problema intentando enviar tu mensaje. ¿Podrías copiar y pegar el contenido sobre un correo electrónico normal y enviarlo? Disculpa por las molestias.",
+    "something_went_wrong": "Algo ha salido mal..."
   },
-  "header": {
-    "title": "Dani Rodríguez, Desarrollador Web Freelance",
-    "toggle_navigation": "Mostrar navegación"
-  },
-  "navbar": {
-    "homepage": "Inicio",
-    "services": "Servicios",
-    "skills": "Cualidades",
-    "contact": "Contacto"
+  "contact_form": {
+    "email": {
+      "label": "Tu e-mail",
+      "placeholder": "¿Dónde puedo responderte?"
+    },
+    "message": {
+      "label": "Mensaje",
+      "placeholder": "El contenido de tu mensaje va aquí"
+    },
+    "name": {
+      "label": "Tu nombre",
+      "placeholder": "¿Cómo me debo referir a ti?"
+    },
+    "send": "¡Enviar!",
+    "subject": {
+      "label": "Asunto",
+      "placeholder": "¿De qué quieres hablar?"
+    }
   },
   "footer": {
     "colophon": "Palabras finales",
@@ -119,5 +129,19 @@
         "title": "Desarrollo Web"
       }
     }
+  },
+  "header": {
+    "title": "Dani Rodríguez, Desarrollador Web Freelance",
+    "toggle_navigation": "Mostrar navegación"
+  },
+  "meta": {
+    "description": "Soy un desarrollador de software freelance y esta es mi web profesional. O dicho en plano: hago webs a cambio de dinero.",
+    "title": "Dani Rodríguez, Desarrollador Web Freelance"
+  },
+  "navbar": {
+    "contact": "Contacto",
+    "homepage": "Inicio",
+    "services": "Servicios",
+    "skills": "Cualidades"
   }
 }

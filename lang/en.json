@@ -1,17 +1,27 @@
 {
-  "meta": {
-    "title": "Dani Rodríguez, Freelance Web Developer",
-    "description": "I am a freelance software developer and this is my professional webpage. Which essentially means I can give you code in exchange for money."
+  "ajax_form": {
+    "message_delivered": "Your message has been delivered!",
+    "server_error": "There are some problems trying to deliver the message at the moment. Could you copy and paste your message into a mail client? Sorry for the inconvenience.",
+    "something_went_wrong": "Something went wrong!"
   },
-  "header": {
-    "title": "Dani Rodríguez, Freelance Software Developer",
-    "toggle_navigation": "Toggle navigation"
-  },
-  "navbar": {
-    "homepage": "Home",
-    "services": "Services",
-    "skills": "Skills",
-    "contact": "Contact"
+  "contact_form": {
+    "email": {
+      "label": "Your e-mail",
+      "placeholder": "Where should I reply to?"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Your message goes here"
+    },
+    "name": {
+      "label": "Your name",
+      "placeholder": "How should I refer to you?"
+    },
+    "send": "Send!",
+    "subject": {
+      "label": "Subject",
+      "placeholder": "What do you want to talk about?"
+    }
   },
   "footer": {
     "colophon": "Colophon",
@@ -119,5 +129,19 @@
         "title": "Web Development"
       }
     }
+  },
+  "header": {
+    "title": "Dani Rodríguez, Freelance Software Developer",
+    "toggle_navigation": "Toggle navigation"
+  },
+  "meta": {
+    "description": "I am a freelance software developer and this is my professional webpage. Which essentially means I can give you code in exchange for money.",
+    "title": "Dani Rodríguez, Freelance Web Developer"
+  },
+  "navbar": {
+    "contact": "Contact",
+    "homepage": "Home",
+    "services": "Services",
+    "skills": "Skills"
   }
 }

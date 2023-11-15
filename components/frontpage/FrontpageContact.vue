@@ -1,12 +1,12 @@
 <template>
   <div id="contact" class="mt-10 sm:mt-20 md:mt-30 mb-10 container">
-    <hr class="block w-50% h-6px b-foreground b-b-1px b-b-1px md:ms-50% mb-3" />
-    <div class="md:flex">
+    <hr class="block w-50% h-6px b-foreground b-b-1px b-b-1px lg:ms-50% mb-3" />
+    <div class="flex flex-col lg:flex-row gap-10 lg:gap-0">
       <div class="flex-1">
         <h2 class="font-size-subheader lh-subheader font-600">
           {{ $t("frontpage_blocks.contact.get_in_touch") }}
-          <!-- TODO: Implement the contact form -->
         </h2>
+        <ContactAjaxForm />
       </div>
       <div class="flex-1 font-size-copy lh-copy text-copy">
         <p>

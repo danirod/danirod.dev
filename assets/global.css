@@ -5,6 +5,8 @@
   --background-color: white;
 
   --accent-color: rgb(32, 102, 164);
+  --accent-color-darker: rgb(23, 88, 145);
+  --danger-color: rgb(192, 0, 0);
   --accent-color-contrast: white;
   --menu-background: white;
   --menu-border: #e6e6e6;
@@ -15,7 +17,9 @@
     --text-color: #f0f0f0;
     --background-color: #202020;
     --accent-color: #80d4f8;
+    --accent-color-darker: #3bb7ec;
     --accent-color-contrast: black;
+    --danger-color: #f09292;
     --link-color: #3ae3ff;
     --menu-background: #202020;
     --menu-border: #3d3d3d;

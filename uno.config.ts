@@ -16,12 +16,14 @@ export default defineConfig({
     "font-size-lead":
       "font-size-5 lg:font-size-6 xl:font-size-7 2xl:font-size-8",
     "font-size-copy": "lg:font-size-5 2xl:font-size-6",
+    "font-size-footer": "font-size-4",
 
     "lh-hero": "lh-150% md:lh-125%",
     "lh-header": "lh-7 md:lh-10 xl:lh-12",
     "lh-subheader": "lh-7 lg:lh-10",
     "lh-lead": "lh-8 xl:lh-10 2xl:lh-11",
     "lh-copy": "lh-6 lg:lh-8 2xl:lh-9",
+    "lh-footer": "lh-5",
   },
   rules: [
     [
@@ -54,6 +56,8 @@ export default defineConfig({
       foreground: "var(--color)",
       background: "var(--background-color)",
       accent: "var(--accent-color)",
+      danger: "var(--danger-color)",
+      accentDarker: "var(--accent-color-darker)",
       accentContrast: "var(--accent-color-contrast)",
       link: "var(--link-color)",
       menuBg: "var(--menu-background)",
