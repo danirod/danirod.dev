@@ -6,7 +6,7 @@
       <img
         class="lt-md:aspect-ratio-1 w-100% object-upper-half object-cover"
         src="~/assets/dani_photo.jpg"
-        alt="A portrait of Dani on his computer"
+        :alt="$t('frontpage_blocks.hero.image_alt')"
         width="200"
       />
     </figure>
@@ -16,20 +16,17 @@
         <p
           class="font-size-9 md:font-size-10 lg:font-size-12 xl:font-size-14 2xl:font-size-18 lh-125%"
         >
-          <strong>Dani Rodríguez</strong>
+          <strong>{{ $t("frontpage_blocks.hero.title") }}</strong>
         </p>
         <p
           class="c-accent font-size-7 md:font-size-8 xl:font-size-9 2xl:font-size-12 lh-100%"
         >
-          <strong>Freelance Web Developer</strong>
+          <strong>{{ $t("frontpage_blocks.hero.subtitle") }}</strong>
         </p>
       </div>
 
       <p class="font-size-hero font-500 lh-hero mt-3 md:mt-6">
-        Making the world better by creating great products and apps that provide
-        value. Through the power of the Web, I can help you or your company
-        offer great experiences to your users and provide services to your
-        customers.
+        {{ $t("frontpage_blocks.hero.lead") }}
       </p>
     </div>
   </div>

@@ -2,11 +2,10 @@
   <footer class="my-10 md:my-20 container">
     <hr />
     <p class="font-size-copy lh-copy mb-4 md:mb-8">
-      <strong class="font-600">Colophon</strong>: This page is powered by Nuxt
-      and looks nice thanks to UnoCSS.<br />
-      No WordPress instances were harmed during the production of this site.<br />
-      Please do not print this page, it is bad for the planet (+ didn't test the
-      CSS).
+      <strong class="font-600">{{ $t("footer.colophon") }}</strong
+      >: {{ $t("footer.powered_by") }}<br />
+      {{ $t("footer.wordpress") }}<br />
+      {{ $t("footer.do_not_print") }}
     </p>
     <div
       class="opacity-90 font-size-copy lh-copy text-center flex flex-col md:text-start md:flex-row gap-5 md:flex-justify-between md:flex-items-end"

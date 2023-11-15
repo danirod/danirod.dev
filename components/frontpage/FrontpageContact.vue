@@ -4,25 +4,27 @@
     <div class="md:flex">
       <div class="flex-1">
         <h2 class="font-size-subheader lh-subheader font-600">
-          Let's get in touch!
+          {{ $t("frontpage_blocks.contact.get_in_touch") }}
           <!-- TODO: Implement the contact form -->
         </h2>
       </div>
       <div class="flex-1 font-size-copy lh-copy text-copy">
         <p>
-          You can contact me by e-mail directly at
+          {{ $t("frontpage_blocks.contact.email.you_can_contact_me") }}
           <a href="mailto:dani@danirod.es">dani@danirod.es</a>
-          or send me a message through
-          <a href="https://linkedin.com/in/danirod">my LinkedIn profile</a>.
-          I'll get back to you during normal business hours (@ UTC+1 time zone).
+          {{ $t("frontpage_blocks.contact.email.or_send_me_a_message") }}
+          <a href="https://linkedin.com/in/danirod">{{
+            $t("frontpage_blocks.contact.email.my_linkedin_profile")
+          }}</a
+          >. {{ $t("frontpage_blocks.contact.email.get_back_to_you") }}.
         </p>
 
         <p class="lg:lh-7 2xl:lh-9">
           <small class="font-size-4 lg:font-size-4.5 2xl:font-size-5.5">
-            Discord user? Send a contact request to
-            <strong class="font-600">@danirod</strong> and we can talk via DM.
-            (Make sure to remind me that you come from this site because I
-            receive many unsolicited communications over there.)
+            {{ $t("frontpage_blocks.contact.discord.discord_user") }}
+            <strong class="font-600">@danirod</strong>
+            {{ $t("frontpage_blocks.contact.discord.talk_via_dm") }}.
+            {{ $t("frontpage_blocks.contact.discord.unsolicited") }}
           </small>
         </p>
       </div>

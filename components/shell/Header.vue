@@ -1,5 +1,10 @@
 <script setup lang="ts">
 const open: Ref<boolean> = ref(false);
+
+const onClickNavigation = () => {
+  console.log("click");
+  open.value = !open.value;
+};
 </script>
 
 <template>
@@ -7,12 +12,12 @@ const open: Ref<boolean> = ref(false);
     class="bg-menu-bg relative z-1 b-b-1px b-b-menu-border sticky top-0 py-3 md:py-4 xl:py-5"
   >
     <div class="container">
-      <h1 class="title hidden">Dani Rodríguez, Freelance Web Developer</h1>
+      <h1 class="title hidden">{{ $t("header.title") }}</h1>
       <nav class="navigation text-right">
         <button
+          @click="onClickNavigation()"
           class="i-simple-line-icons:menu m-2 w-8 h-8 sm:hidden"
-          @click="open = !open"
-          title="Toggle navigation"
+          :title="$t('header.toggle_navigation')"
         ></button>
         <div :class="['sm-block relative', { hidden: !open }]">
           <ShellNavbar />

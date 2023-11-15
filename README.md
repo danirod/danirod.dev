@@ -15,6 +15,21 @@ Powered by Nuxt 3 and UnoCSS.
 - Build the app: `npm run build`
 - Test in production: `npm run preview`
 
+## i18n notes
+
+Situation:
+
+- Spanish is configured at https://danirod.dev/es
+- English is configured at https://danirod.dev/en
+- Visiting either one of both should provide the contents in the given language.
+- Visiting https://danirod.dev should 302 to the appropiate language based
+  on the Accept-Language header.
+
+Additional requirements (should be covered by nuxt-i18n but take a look):
+
+- Make sure that the html tag has the proper lang="" attribute.
+- Make sure that there are hreflang references in the head.
+
 ## Known issues
 
 In development mode on Firefox, the page sometimes freezes during a hot code

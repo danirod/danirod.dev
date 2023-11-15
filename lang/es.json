@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Dani Rodríguez, Desarrollador Web Freelance",
+    "description": "Soy un desarrollador de software freelance y esta es mi web profesional. O dicho en plano: hago webs a cambio de dinero."
+  },
+  "header": {
+    "title": "Dani Rodríguez, Desarrollador Web Freelance",
+    "toggle_navigation": "Mostrar navegación"
+  },
+  "navbar": {
+    "homepage": "Inicio",
+    "services": "Servicios",
+    "skills": "Cualidades",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "colophon": "Palabras finales",
+    "do_not_print": "Por favor, no imprimas esta web, es malo para el planeta (+ no he probado cómo se ve)",
+    "powered_by": "Esta web funciona gracias a Nuxt y se ve bonita gracias a UnoCSS.",
+    "wordpress": "Ninguna instalación de WordPress sufrió daño durante el desarrollo de esta web."
+  },
+  "frontpage_blocks": {
+    "available": {
+      "currently_available": "¡Estoy disponible para nuevos proyectos!",
+      "get_in_touch": "Ponte en contacto"
+    },
+    "contact": {
+      "discord": {
+        "discord_user": "¿Utilizas Discord? También puedes mandar una solicitud de contacto a",
+        "talk_via_dm": "para que podamos hablar mediante mensaje privado",
+        "unsolicited": "(Solo recuerda recordarme que te envíe desde esta web porque suelo recibir mensajes no solicitados.)"
+      },
+      "email": {
+        "get_back_to_you": "Te responderé de vuelta en horas de trabajo normales (franja horaria peninsular)",
+        "my_linkedin_profile": "mi perfil de LinkedIn",
+        "or_send_me_a_message": "o contactarme por mensajería desde",
+        "you_can_contact_me": "Puedes enviarme directamente un e-mail a"
+      },
+      "get_in_touch": "¡Hora de ponerse en contacto!"
+    },
+    "featured_skills": {
+      "go": {
+        "alt": "Go",
+        "description": "Hay situaciones en las cuales es mejor comenzar usando Go. Para aplicaciones intensas y que tengan mayores requisitos, como software que va a manejar mucho dato o uso por segundo o minuto, Go proporciona un mayor ancho de banda. Además, en entornos donde el software tenga que ser pequeño, modular o altamente eficiente.",
+        "title": "Go, para requisitos más exigentes"
+      },
+      "lead": "Una lista curada de tecnologías en las que me muevo mejor. Cuando tenga todo el control sobre el stack tecnológico (es decir, cuando no se trate de trabajar en código que ya existe), si puedo probablemente acabe usando alguna de estas.",
+      "nodejs": {
+        "alt": "NodeJS",
+        "description": "Para proyectos más pequeños que se centren en la interacción o en intercambio de datos, NodeJS hace fácil escribir y desplegar código que haga muchas cosas de forma concisa. Podemos empezar con un prototipo y evolucionarlo con el tiempo o cambiar a algo mejor a medida que las necesidades lo sugieran.",
+        "title": "NodeJS, para prototipos de backend rápidos"
+      },
+      "nuxt": {
+        "alt": "Nuxt",
+        "description": "Si buscas algo relacionado con el desarrollo de software, como crear una web para tu organización, configurar una tienda online o trabajar en una aplicación web progresiva para tus clientes, usar Nuxt me permitirá centrarme en ofrecer una gran experiencia interactiva para tus usuarios.",
+        "title": "Nuxt, para aplicaciones y diseños web elegantes"
+      },
+      "rails": {
+        "alt": "Rails",
+        "description": "Salvo que lso requisitos del proyecto sugieran que no es la mejor opción, para nuevos proyectos acabaré usando Ruby on Rails. Es una gran tecnología que facilita las iteraciones rápidas. Así, puedo trabajar de una manera más iterativa para entregar más rápido y mostrar progreso, algo que hará fácil evolucionar la aplicación si hace falta cambiar algo.",
+        "title": "Ruby on Rails, mi solución favorita"
+      },
+      "title": "Mis herramientas favoritas"
+    },
+    "hero": {
+      "image_alt": "Un selfie de Dani en su ordenador",
+      "lead": "Haciendo del mundo un lugar mejor creando grandes productos y aplicaciones que proporcionen valor. Con el poder de la Web, puedo ayudarte a ti o a tu empresa a ofrecer grandes experiencias online a tus usuarios y a proporcionar servicios a tus clientes.",
+      "subtitle": "Desarrollador Web Freelance",
+      "title": "Dani Rodríguez"
+    },
+    "questions": {
+      "agreement": {
+        "p1": "Sí, eso hay que darlo casi por hecho. No trabajo sin contrato previo, ya que firmar un documento es la única forma de que todas las partes sepamos las expectativas del proyecto, estemos de acuerdo en el acceso a la propiedad industrial por mi parte  (por ejemplo, acceder al código o a la información que me vayas a proporcionar), e información sobre hitos y pagos.",
+        "p2": "Intento mantener el papeleo fácil porque no me gustan estas cosas. Como mínimo, hará falta un contrato básico con cláusulas tanto para mi como desarrollador independiente, como para ti como receptor de mis servicios, que son estandares en nuestra industria, así como cláusulas basadas en cosas que he visto en este tiempo trabajando por independiente.",
+        "p3": "Sin embargo, muchos proyectos requieren algo más específico. El acuerdo intenta ser justo para todas las partes, y reflejará que se espera que yo trabaje de forma profesional, a la vez que me asegura que el cliente no intentará trampear el desarrollo del proyecto durante nuestra relación empresarial. Tienes la garantía de que habrá tiempo para revisar y aceptar las condiciones antes de empezar a trabajar, sin ningún compromiso hasta la firma, y por supuesto, sin coste alguno.",
+        "title": "¿Tendremos que firmar algún contrato?"
+      },
+      "contractor": {
+        "p1": "Sí, puedo trabajar como trabajador externo, lo que en inglés suelen denominar un contractor. Por ejemplo, si necesitas algo de apoyo en un equipo para cubrir una baja o si sabes que vas a tener un pico de trabajo y necesitas que en tu equipo trabaje más gente durante un periodo de tiempo acotado y ya sabes que en el futuro dejarás de necesitar tantas manos.",
+        "p2": "Para reclutadores recién llegados: recuerda consultar la definición de desarrollador freelance. No, no estás contratando un asalariado. Trabajo por independiente y proporciono servicios a distintos profesionales y organizaciones. Lo que cubro aquí es trabajar para empresas como una relación independiente entre la empresa y yo como prestador de servicios.",
+        "p3": "Si eres un CTO o un contacto un poco más técnico y tu proyecto tiene requisitos especiales que necesitan ser verificados (tales como si tengo experiencia en tu stack tecnológico), contacta conmigo para que te pueda proporcionar más información al respecto.",
+        "title": "¿Estás disponible como trabajador externo?"
+      },
+      "cost": {
+        "p1": "Desafortunadamente, la respuesta es: depende. No es posible lanzar un precio sin más, porque hay muchos rangos. El software y el desarrollo web requiere análisis y planificación, porque cada proyecto tiene una complejidad diferente y eso va a implicar diferente tiempo y estimaciones de esfuerzo, que es lo que acaba afectando al precio total del proyecto.",
+        "p2": "Por ejemplo, una página web pequeña (como puede ser diseñar y publicar una pequeña web con WordPress) puede costar entre 700 y 2000 euros dependiendo de los requisitos y el tamaño de la web, sin contar con el mantenimiento. Sin embargo, esto es un ejemplo, porque la única manera de saber el precio final tiene que ser que pueda saber qué quieres conseguir para poder planificar un presupuesto, sin obligaciones.",
+        "p3": "La tarifa horaria puede costar entre 40 y 100 euros la hora, dependiendo de las necesidades y de si estoy aplicando descuentos. Normalmente aplico descuentos en algunas ocasiones, como puede ser planificar un día completo de trabajo en vez de una bolsa de horas, o trabajar toda una semana o un mes. De nuevo, es mejor que contactes conmigo si tienes una idea que quieres ejecutar para que pueda darte una estimación gratis.",
+        "title": "¿Cuánto cuestan tus servicios?"
+      },
+      "existing": {
+        "p1": "Sí, claro. Pongamos como ejemplo que ya tienes algo creado pero necesitas unas manos que le den cariño a ese producto, o que has heredado el código de una aplicación pero no sabes qué hacer con él. Tal vez ya montaste una web hace unos años pero no puedes o no quieres que el equipo original la actualice.",
+        "p2": "En este caso, te puedo ayudar a agregar nuevas funciones, mantener la aplicación para que pueda seguir operativa, o actualizarla si deja de funcionar bien con nuevo hardware, navegadores o sistemas operativos. Contacta conmigo y cuéntame tus necesidades y te daré más información sobre cómo te puedo ayudar.",
+        "title": "Mi proyecto ya existe, ¿puedes trabajar en mi código?"
+      },
+      "maintenance": {
+        "p1": "Si necesitas un contrato de mantenimiento, lo podemos agregar al proyecto y facturarlo por separado. No los aplico por defecto: una vez que el proyecto ha terminado, lo considero cerrado. Sin embargo, planificar el software es complicado y a veces es preferible mantener una línea de contacto abierta para poder agregar más funciones o corregir problemas que puedan surgir durante la vida de la aplicación.",
+        "p2": "En esas situaciones, un contrato de mantenimiento es útil porque te permite mantener una línea de contacto para emergencias para tratar problemas que puedan surgir, proporcionar soporte para la aplicación o planificar nuevas funciones o cambios en función de tus necesidades, incluso una vez acabado el proyecto.",
+        "title": "¿Ofreces contratos de mantenimiento?"
+      },
+      "rate": {
+        "p1": "De nuevo, depende. Prefiero establecer tarifas por hora, día, semana o mes, porque esto te permite pagar únicamente por el trabajo que se haga: pagas por el tiempo que permanezca trabajando en tu proyecto, bien sea diseñando, creando el software o la web, o en temas de comunicación y soporte.",
+        "p2": "Sin embargo, para otros proyectos es mucho más coherente presupuestar todo el proyecto de golpe y dividirlo en dos o tres cuotas. Las cuotas se configuran al principio y al final del proyecto, y en otros puntos importantes del desarrollo. Esto establece expectativas claras y seguridad en cuanto a los servicios pactados, tanto para ti como para mí.",
+        "p3": "Una vez más, la única forma de saber qué es lo más apropiado para tu proyecto es que lo hablemos para que pueda sugerirte opciones una vez que sepa las necesidades de tu proyecto, sin compromiso alguno.",
+        "title": "¿Tarificas por proyecto o por hora / día / semana?"
+      },
+      "title": "Preguntas rápidas"
+    },
+    "services": {
+      "lead": "Ofrezco diferentes servicios relacionados con el desarrollo de software, incluyendo trabajar en proyectos completos desde su idea inicial hasta su implantación, o el mantenimiento de código que ya existe. También puedo ofrecer formación para ayudar a individuos o equipos a adquirir cualidades en distintas áreas del desarrollo de software.",
+      "pwa_dev": {
+        "p1": "Las Aplicaciones Web Progresivas (PWAs) son aplicaciones web que imitan muy bien a las aplicaciones normales. Con características como poder agregar el icono a la pantalla de inicio del móvil, modo de pantalla completa o notificaciones, tus usuarios ni se darán cuenta que están usando una página web.",
+        "p2": "Las PWAs tienen ventajas, como que no necesiten plataformas de desarrollo costosas, esperar a que aprueben la aplicación en las tiendas de apps móviles, o esperar que tus usuarios actualicen la aplicación. Sólo pídeles que pulsen un botón y la aplicación estará instalada para que la usen.",
+        "title": "Aplicaciones Progresivas"
+      },
+      "title": "Mis servicios",
+      "web_dev": {
+        "p1": "Sea un sitio web o un blog para dar a conocer tu negocio, una tienda online para que tus usuarios puedan comprar directamente desde tu sitio, o una aplicación web completa para tu SaaS, puedo ayudarte a construir tus ideas, desde el diseño hasta su lanzamiento, mantener código ya existente, o apoyar a tu equipo como externo a corto o largo plazo.",
+        "p2": "Me puedo ocupar tanto del frontend como del backend, lo que significa que puedo cubrir todas las áreas de tu web.",
+        "title": "Desarrollo Web"
+      }
+    }
+  }
+}

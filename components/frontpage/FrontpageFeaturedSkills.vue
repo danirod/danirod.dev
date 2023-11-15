@@ -1,10 +1,10 @@
 <template>
-  <FrontpageBlock id="skills" title="My favourite tools">
-    <FrontpageBlockLead>
-      A curated list of technologies where I work best. For cases where I have
-      full control over the technology stack (as in, we are not talking about
-      maintaining existing codebases), I'd rather just use one of these if I
-      can.
+  <FrontpageBlock
+    id="skills"
+    :title="$t('frontpage_blocks.featured_skills.title')"
+  >
+    <FrontpageBlockLead
+      >{{ $t("frontpage_blocks.featured_skills.lead") }}
     </FrontpageBlockLead>
 
     <SkillsFeatured media="left">
@@ -21,16 +21,17 @@
         />
         <source srcset="~/assets/featured/rails.svg" type="image/svg+xml" />
         <source srcset="~/assets/featured/rails.png" type="image/png" />
-        <img src="~/assets/featured/rails.png" width="240" alt="Rails" />
+        <img
+          src="~/assets/featured/rails.png"
+          width="240"
+          :alt="$t('frontpage_blocks.featured_skills.rails.alt')"
+        />
       </template>
-      <SkillsTitle>Ruby on Rails, my one stop solution</SkillsTitle>
+      <SkillsTitle>{{
+        $t("frontpage_blocks.featured_skills.rails.title")
+      }}</SkillsTitle>
       <p>
-        Unless the requirements of the project suggest that it is not a good
-        fit, for new projects I'll probably be using Ruby on Rails. It is a
-        great technology that makes iterating quick and easy. This allows to
-        work in smaller chunks allowing to deliver more quickly and to show
-        progress, which will make it easier to change the needs of the
-        application if required.
+        {{ $t("frontpage_blocks.featured_skills.rails.description") }}
       </p>
     </SkillsFeatured>
 
@@ -48,15 +49,17 @@
         />
         <source srcset="~/assets/featured/nodejs.svg" type="image/svg+xml" />
         <source srcset="~/assets/featured/nodejs.png" type="image/png" />
-        <img src="~/assets/featured/nodejs.png" width="240" alt="NodeJS" />
+        <img
+          src="~/assets/featured/nodejs.png"
+          width="240"
+          :alt="$t('frontpage_blocks.featured_skills.nodejs.alt')"
+        />
       </template>
-      <SkillsTitle>NodeJS, for quick backend prototypes</SkillsTitle>
+      <SkillsTitle>{{
+        $t("frontpage_blocks.featured_skills.nodejs.title")
+      }}</SkillsTitle>
       <p>
-        For even smaller projects that are focused in interaction flows or data
-        exchange, NodeJS makes it easy to write and deploy code that does a lot
-        of stuff in a concise way. We can start with a basic prototype and
-        evolve it over time as the requirements grow, or switch to a more
-        tailored technology once the needs suggest so.
+        {{ $t("frontpage_blocks.featured_skills.nodejs.description") }}
       </p>
     </SkillsFeatured>
 
@@ -74,15 +77,17 @@
         />
         <source srcset="~/assets/featured/nuxt.svg" type="image/svg+xml" />
         <source srcset="~/assets/featured/nuxt.png" type="image/png" />
-        <img src="~/assets/featured/nuxt.png" width="240" alt="Nuxt" />
+        <img
+          src="~/assets/featured/nuxt.png"
+          width="240"
+          :alt="$t('frontpage_blocks.featured_skills.nuxt.alt')"
+        />
       </template>
-      <SkillsTitle>Nuxt, for nice web designs and applications</SkillsTitle>
+      <SkillsTitle>{{
+        $t("frontpage_blocks.featured_skills.nuxt.title")
+      }}</SkillsTitle>
       <p>
-        If you are just looking for something related to website development,
-        such as creating a website for your organization, setting up an online
-        shop, or working on a web or progressive application for your customers,
-        using NuxtJS will allow me to focus in providing a great web experience
-        for your users.
+        {{ $t("frontpage_blocks.featured_skills.nuxt.description") }}
       </p>
     </SkillsFeatured>
 
@@ -100,15 +105,17 @@
         />
         <source srcset="~/assets/featured/go.svg" type="image/svg+xml" />
         <source srcset="~/assets/featured/go.png" type="image/png" />
-        <img src="~/assets/featured/go.png" width="240" alt="Go" />
+        <img
+          src="~/assets/featured/go.png"
+          width="240"
+          :alt="$t('frontpage_blocks.featured_skills.go.alt')"
+        />
       </template>
-      <SkillsTitle>Go, constained backends and real time services</SkillsTitle>
+      <SkillsTitle>{{
+        $t("frontpage_blocks.featured_skills.go.title")
+      }}</SkillsTitle>
       <p>
-        There are a couple of situations where it is more adequate to start from
-        scratch using Go. For intensive applications that have higher
-        requirements, such as software that is going to handle a lot of data per
-        second or minute, Go provides a higher bandwidth. Also, for environments
-        where the software has to be small or modular.
+        {{ $t("frontpage_blocks.featured_skills.go.description") }}
       </p>
     </SkillsFeatured>
   </FrontpageBlock>

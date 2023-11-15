@@ -2,10 +2,15 @@
 import "@unocss/reset/tailwind-compat.css";
 import "~/assets/global.css";
 
+const i18nHead = useLocaleHead({
+  addSeoAttributes: true,
+  addDirAttribute: true,
+});
+const { t } = useI18n();
+
 const meta = {
-  title: "Dani Rodríguez, Freelance Web Developer",
-  description:
-    "I am a freelance software developer and this is my professional webpage. Which essentially means I can give you code in exchange for money.",
+  title: t("meta.title"),
+  description: t("meta.description"),
   url: "https://danirod.dev",
   icon: "/danirod_icon.png",
 };
@@ -13,10 +18,15 @@ const meta = {
 useHead({
   title: meta.title,
   htmlAttrs: {
-    lang: "en",
+    lang: i18nHead.value.htmlAttrs!.lang,
+    dir: i18nHead.value.htmlAttrs!.dir,
   },
-  link: [{ rel: "icon", type: "image/png", href: meta.icon }],
+  link: [
+    ...(i18nHead.value.link || []),
+    { rel: "icon", type: "image/png", href: meta.icon },
+  ],
   meta: [
+    ...(i18nHead.value.meta || []),
     { name: "description", content: meta.description },
     { name: "og:title", content: meta.title },
     { name: "og:description", content: meta.description },
