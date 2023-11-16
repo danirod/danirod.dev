@@ -12,7 +12,7 @@ const meta = {
   title: t("meta.title"),
   description: t("meta.description"),
   url: "https://danirod.dev",
-  icon: "/danirod_icon.png",
+  icon: "https://danirod.dev/danirod_icon.png",
 };
 
 useHead({
