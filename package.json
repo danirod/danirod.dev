@@ -15,6 +15,7 @@
     "@nuxtjs/google-fonts": "^3.0.2",
     "@nuxtjs/i18n": "^8.0.0-rc.5",
     "@nuxtjs/plausible": "^0.2.3",
+    "@nuxtjs/robots": "^3.0.0",
     "@unocss/nuxt": "^0.57.2",
     "@unocss/postcss": "^0.57.3",
     "nuxt": "^3.8.1",

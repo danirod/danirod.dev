@@ -6,7 +6,18 @@ export default defineNuxtConfig({
     "@unocss/nuxt",
     "@nuxtjs/i18n",
     "@nuxtjs/plausible",
+    "@nuxtjs/robots",
   ],
+  robots: {
+    rules: {
+      UserAgent: "*",
+      Disallow: [
+        "/contact/success",
+        "/en/contact/success",
+        "/es/contact/success",
+      ],
+    },
+  },
   postcss: {
     plugins: {
       "@unocss/postcss": {},
