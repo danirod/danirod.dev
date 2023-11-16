@@ -7,7 +7,20 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/plausible",
     "@nuxtjs/robots",
+    "@nuxt/image",
   ],
+  image: {
+    format: ["avif", "webp", "jpeg"],
+    screens: {
+      sm: 600,
+      md: 720,
+      lg: 960,
+      xl: 1200,
+      "2xl": 1440,
+    },
+    densities: [1, 2],
+    quality: 85,
+  },
   robots: {
     rules: {
       UserAgent: "*",

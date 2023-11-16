@@ -3,11 +3,13 @@
     class="container my-5 sm:flex gap-4 md:gap-6 lg:gap-15 xl:gap-20 2xl:gap-30 flex-items-center md:flex-row-reverse"
   >
     <figure class="mx-auto md:block w-30 md:w-32 lg:w-55 xl:w-70 2xl:w-80">
-      <img
-        class="lt-md:aspect-ratio-1 w-100% object-upper-half object-cover"
-        src="~/assets/dani_photo.jpg"
+      <NuxtPicture
+        :imgAttrs="{
+          class: 'lt-md:aspect-ratio-1 w-100% object-upper-half object-cover',
+        }"
+        src="/dani_photo.jpg"
         :alt="$t('frontpage_blocks.hero.image_alt')"
-        width="200"
+        sizes="300px md:330px lg:550px xl:700px 2xl:800px"
       />
     </figure>
     <div class="flex-1">
