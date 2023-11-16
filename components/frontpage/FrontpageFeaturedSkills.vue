@@ -24,6 +24,7 @@
         <img
           src="~/assets/featured/rails.png"
           width="240"
+          height="90"
           :alt="$t('frontpage_blocks.featured_skills.rails.alt')"
         />
       </template>
@@ -52,6 +53,7 @@
         <img
           src="~/assets/featured/nodejs.png"
           width="240"
+          height="147"
           :alt="$t('frontpage_blocks.featured_skills.nodejs.alt')"
         />
       </template>
@@ -80,6 +82,7 @@
         <img
           src="~/assets/featured/nuxt.png"
           width="240"
+          height="60"
           :alt="$t('frontpage_blocks.featured_skills.nuxt.alt')"
         />
       </template>
@@ -108,6 +111,7 @@
         <img
           src="~/assets/featured/go.png"
           width="240"
+          height="90"
           :alt="$t('frontpage_blocks.featured_skills.go.alt')"
         />
       </template>
