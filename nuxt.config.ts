@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
   ],
   image: {
-    format: ["avif", "webp", "jpeg"],
+    format: ["webp", "jpeg"],
     screens: {
       sm: 600,
       md: 720,
