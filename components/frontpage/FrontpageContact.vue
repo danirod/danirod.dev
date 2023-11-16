@@ -1,5 +1,6 @@
 <template>
-  <div id="contact" class="mt-10 sm:mt-20 md:mt-30 mb-10 container">
+  <div class="mt-10 sm:mt-20 md:mt-30 mb-10 container relative">
+    <div id="contact" class="top--20 md:top--25 lg:top--30 absolute"></div>
     <hr class="block w-50% h-6px b-foreground b-b-1px b-b-1px lg:ms-50% mb-3" />
     <div class="flex flex-col lg:flex-row gap-10 lg:gap-0">
       <div class="flex-1">
