@@ -18,6 +18,7 @@ const mailCreds = {
   domain: process.env.MAILGUN_API_DOMAIN,
   from: process.env.MAILGUN_API_FROM,
   to: process.env.MAILGUN_API_TO,
+  endpoint: process.env.MAILGUN_API_ENDPOINT || "https://api.mailgun.net",
 };
 
 /* Create the MailGun client. */
@@ -25,6 +26,7 @@ const mailgun = new Mailgun(FormData);
 const mg = mailgun.client({
   key: mailCreds.key,
   username: "api",
+  url: mailCreds.endpoint,
 });
 
 /* Type for the message payload. */

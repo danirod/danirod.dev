@@ -62,6 +62,8 @@ The following four environment variables must be declared and present:
   header, usually noreply@danirod.dev, but not hardcoded anyway.
 - `MAILGUN_API_TO`: Just a way to parameterize the email where the contact form
   will be delivered, usually my business mail, but not hardcoded anyway.
+- `MAILGUN_API_ENDPOINT`: Set to https://api.eu.mailgun.net when Mailgun is
+  configured to use European servers, otherwise it will return HTTP 401.
 
 ### i18n
 
