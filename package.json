@@ -20,5 +20,9 @@
     "nuxt": "^3.8.1",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "form-data": "^4.0.0",
+    "mailgun.js": "^9.3.0"
   }
 }

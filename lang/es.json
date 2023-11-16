@@ -23,6 +23,11 @@
       "placeholder": "¿De qué quieres hablar?"
     }
   },
+  "contact_success": {
+    "back": "Regresar",
+    "message_delivered": "Tu mensaje ha sido enviado",
+    "thank_you": "Gracias, el mensaje ha sido recibido. Si procede, tendrás respuesta por mi parte."
+  },
   "footer": {
     "colophon": "Palabras finales",
     "do_not_print": "Por favor, no imprimas esta web, es malo para el planeta (+ no he probado cómo se ve)",

@@ -1,9 +1,39 @@
+import Mailgun, { MailgunMessageData } from "mailgun.js";
+import FormData from "form-data";
+import type { EventHandlerRequest, H3Event } from "h3";
+
+/* TODO: Maybe if the credentials are missing I can just disable the form client-side? */
+if (
+  !process.env.MAILGUN_API_KEY ||
+  !process.env.MAILGUN_API_DOMAIN ||
+  !process.env.MAILGUN_API_FROM ||
+  !process.env.MAILGUN_API_TO
+) {
+  throw new Error("Missing MailGun environment variables");
+}
+
+/* Just a way to avoid hardcoding process.env to the integration code. */
+const mailCreds = {
+  key: process.env.MAILGUN_API_KEY,
+  domain: process.env.MAILGUN_API_DOMAIN,
+  from: process.env.MAILGUN_API_FROM,
+  to: process.env.MAILGUN_API_TO,
+};
+
+/* Create the MailGun client. */
+const mailgun = new Mailgun(FormData);
+const mg = mailgun.client({
+  key: mailCreds.key,
+  username: "api",
+});
+
+/* Type for the message payload. */
 interface MessagePayload {
-  locale?: string;
   contact_name: string;
   contact_email: string;
   message_subject?: string;
   message_body: string;
+  locale?: string;
 }
 
 function validateBody(body: unknown): body is MessagePayload {
@@ -41,7 +71,9 @@ function validateBody(body: unknown): body is MessagePayload {
   );
 }
 
-export default defineEventHandler(async (event) => {
+async function flattenMultipartData(
+  event: H3Event<EventHandlerRequest>
+): Promise<Record<string, string>> {
   const formData = await readMultipartFormData(event);
   const body: Record<string, string> = {};
   formData?.forEach(({ name, data }) => {
@@ -49,23 +81,54 @@ export default defineEventHandler(async (event) => {
       body[name] = data.toString();
     }
   });
+  return body;
+}
 
-  if (validateBody(body)) {
-    console.log(body);
+function emailPayload(body: MessagePayload): MailgunMessageData {
+  return {
+    from: `${
+      body.contact_name || "danirod.dev Contact Form"
+    } <noreply@danirod.dev>`,
+    "h:Reply-To": body.contact_email,
+    to: [mailCreds.to],
+    subject: `[${
+      body.locale ? `Contact Form - ${body.locale}` : "Contact Form"
+    }] ${body.message_subject}`,
+    text: body.message_body,
+  };
+}
 
-    const isXHR = event.headers.get("Accept")?.includes("application/json");
-    if (isXHR) {
-      return {
-        status: "ok",
-      };
-    } else {
-      await sendRedirect(event, "/contact/success", 302);
-    }
-  } else {
+export default defineEventHandler(async (event) => {
+  const body = await flattenMultipartData(event);
+
+  if (!validateBody(body)) {
     throw createError({
       message:
         "This message has missing some information that you should provide.",
       status: 422,
     });
+  }
+
+  try {
+    await mg.messages.create(mailCreds.domain, emailPayload(body));
+  } catch (e) {
+    console.error(e);
+    throw createError({
+      message: "Server rejected email",
+      status: 502,
+    });
+  }
+
+  const isXHR = event.headers.get("Accept")?.includes("application/json");
+  if (isXHR) {
+    return {
+      status: "ok",
+    };
+  } else {
+    if (body.locale && ["en", "es"].includes(body.locale)) {
+      await sendRedirect(event, `/${body.locale}/contact/success`, 302);
+    } else {
+      await sendRedirect(event, "/contact/success", 302);
+    }
   }
 });

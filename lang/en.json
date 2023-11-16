@@ -1,4 +1,9 @@
 {
+  "contact_success": {
+    "message_delivered": "Your message has been delivered",
+    "thank_you": "Thank you, the message has been accepted by the system. If appropiate, you'll have an answer from me.",
+    "back": "Go back"
+  },
   "ajax_form": {
     "message_delivered": "Your message has been delivered!",
     "server_error": "There are some problems trying to deliver the message at the moment. Could you copy and paste your message into a mail client? Sorry for the inconvenience.",
