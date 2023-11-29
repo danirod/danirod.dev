@@ -1,16 +1,7 @@
 import Mailgun, { MailgunMessageData } from "mailgun.js";
 import FormData from "form-data";
 import type { EventHandlerRequest, H3Event } from "h3";
-
-/* TODO: Maybe if the credentials are missing I can just disable the form client-side? */
-if (
-  !process.env.MAILGUN_API_KEY ||
-  !process.env.MAILGUN_API_DOMAIN ||
-  !process.env.MAILGUN_API_FROM ||
-  !process.env.MAILGUN_API_TO
-) {
-  throw new Error("Missing MailGun environment variables");
-}
+import { IMailgunClient } from "mailgun.js/Interfaces";
 
 /* Just a way to avoid hardcoding process.env to the integration code. */
 const mailCreds = {
@@ -21,13 +12,17 @@ const mailCreds = {
   endpoint: process.env.MAILGUN_API_ENDPOINT || "https://api.mailgun.net",
 };
 
-/* Create the MailGun client. */
-const mailgun = new Mailgun(FormData);
-const mg = mailgun.client({
-  key: mailCreds.key,
-  username: "api",
-  url: mailCreds.endpoint,
-});
+let mg: IMailgunClient | null = null;
+
+if (mailCreds.key && mailCreds.domain && mailCreds.from && mailCreds.to) {
+  /* Create the MailGun client. */
+  const mailgun = new Mailgun(FormData);
+  mg = mailgun.client({
+    key: mailCreds.key,
+    username: "api",
+    url: mailCreds.endpoint,
+  });
+}
 
 /* Type for the message payload. */
 interface MessagePayload {
@@ -92,7 +87,7 @@ function emailPayload(body: MessagePayload): MailgunMessageData {
       body.contact_name || "danirod.dev Contact Form"
     } <noreply@danirod.dev>`,
     "h:Reply-To": body.contact_email,
-    to: [mailCreds.to],
+    to: [mailCreds.to!],
     subject: `[${
       body.locale ? `Contact Form - ${body.locale}` : "Contact Form"
     }] ${body.message_subject}`,
@@ -111,8 +106,15 @@ export default defineEventHandler(async (event) => {
     });
   }
 
+  if (mg == null) {
+    throw createError({
+      message: "Server is misconfigured and does not accept email",
+      status: 502,
+    });
+  }
+
   try {
-    await mg.messages.create(mailCreds.domain, emailPayload(body));
+    await mg.messages.create(mailCreds.domain!, emailPayload(body));
   } catch (e) {
     console.error(e);
     throw createError({

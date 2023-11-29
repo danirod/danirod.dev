@@ -35,7 +35,7 @@ async function onMessage(payload) {
 </script>
 
 <template>
-  <ContactForm :disabled="disabled" @message="onMessage" />
+  <ContactForm :disabled="disabled || done" @message="onMessage" />
   <p v-if="done" class="c-accent-color font-600 mt-4">
     🚀 {{ $t("ajax_form.message_delivered") }}
   </p>
