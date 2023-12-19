@@ -87,6 +87,10 @@
       "subtitle": "Desarrollador Web Freelance",
       "title": "Dani Rodríguez"
     },
+    "not_available": {
+      "currently_not_available": "Ups, no disponible para proyectos ahora mismo.",
+      "try_anyway": "Contactar"
+    },
     "questions": {
       "agreement": {
         "p1": "Sí, eso hay que darlo casi por hecho. No trabajo sin contrato previo, ya que firmar un documento es la única forma de que todas las partes sepamos las expectativas del proyecto, estemos de acuerdo en el acceso a la propiedad industrial por mi parte  (por ejemplo, acceder al código o a la información que me vayas a proporcionar), e información sobre hitos y pagos.",

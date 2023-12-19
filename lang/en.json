@@ -87,6 +87,10 @@
       "subtitle": "Freelance Web Developer",
       "title": "Dani Rodríguez"
     },
+    "not_available": {
+      "currently_not_available": "Oh no, not available for projects at the moment.",
+      "try_anyway": "Get in touch"
+    },
     "questions": {
       "agreement": {
         "p1": "Yes, that is expected. I don't work without prior agreement, as signing some kind of document is the only way both you and me can be clear in regards to project expectations, third party intellectual property access, milestones and payments.",
