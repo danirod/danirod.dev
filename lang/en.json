@@ -1,9 +1,4 @@
 {
-  "contact_success": {
-    "message_delivered": "Your message has been delivered",
-    "thank_you": "Thank you, the message has been accepted by the system. If appropiate, you'll have an answer from me.",
-    "back": "Go back"
-  },
   "ajax_form": {
     "message_delivered": "Your message has been delivered!",
     "server_error": "There are some problems trying to deliver the message at the moment. Could you copy and paste your message into a mail client? Sorry for the inconvenience.",
@@ -28,11 +23,20 @@
       "placeholder": "What do you want to talk about?"
     }
   },
+  "contact_success": {
+    "back": "Go back",
+    "message_delivered": "Your message has been delivered",
+    "thank_you": "Thank you, the message has been accepted by the system. If appropiate, you'll have an answer from me."
+  },
   "footer": {
+    "check_out_the_code": "here is the source code!",
     "colophon": "Colophon",
-    "do_not_print": "Please do not print this page, it is bad for the planet (+ didn't test the CSS).",
-    "powered_by": "This page is powered by Nuxt and looks nice thanks to UnoCSS.",
-    "wordpress": "No WordPress instances were harmed during the production of this site."
+    "copyright": "Copyright © {year} Dani Rodríguez",
+    "do_not_print": "Please do not print this page, it is bad for the planet (+ didn't test the CSS)",
+    "made_in_spain": "Made in Spain",
+    "powered_by": "This page is powered by Nuxt and looks nice thanks to UnoCSS",
+    "this_is_open_source": "This website is open source",
+    "wordpress": "No WordPress instances were harmed during the production of this site"
   },
   "frontpage_blocks": {
     "available": {

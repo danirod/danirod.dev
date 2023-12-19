@@ -29,10 +29,14 @@
     "thank_you": "Gracias, el mensaje ha sido recibido. Si procede, tendrás respuesta por mi parte."
   },
   "footer": {
+    "check_out_the_code": "¡aquí está su código fuente!",
     "colophon": "Palabras finales",
+    "copyright": "Copyright © {year} Dani Rodríguez",
     "do_not_print": "Por favor, no imprimas esta web, es malo para el planeta (+ no he probado cómo se ve)",
-    "powered_by": "Esta web funciona gracias a Nuxt y se ve bonita gracias a UnoCSS.",
-    "wordpress": "Ninguna instalación de WordPress sufrió daño durante el desarrollo de esta web."
+    "made_in_spain": "Made in Spain",
+    "powered_by": "Esta web funciona gracias a Nuxt y se ve bonita gracias a UnoCSS",
+    "this_is_open_source": "Esta web es de código abierto",
+    "wordpress": "Ninguna instalación de WordPress sufrió daño durante el desarrollo de esta web"
   },
   "frontpage_blocks": {
     "available": {
