@@ -111,8 +111,6 @@ async function earlyRejectCaptcha(token: string) {
       body: body,
     }
   );
-  console.log(body);
-  console.log(response);
   if (response.success) {
     return response.success;
   }
