@@ -8,7 +8,15 @@ export default defineNuxtConfig({
     "@nuxtjs/plausible",
     "@nuxtjs/robots",
     "@nuxt/image",
+    "vue-recaptcha/nuxt",
   ],
+  runtimeConfig: {
+    public: {
+      recaptcha: {
+        v3SiteKey: process.env.RECAPTCHA_SITE_KEY,
+      },
+    },
+  },
   image: {
     format: ["webp", "jpeg"],
     screens: {

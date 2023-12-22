@@ -1,5 +1,6 @@
 {
   "ajax_form": {
+    "captcha_error": "reCAPTCHA could not validate your request. Please use e-mail.",
     "message_delivered": "Your message has been delivered!",
     "server_error": "There are some problems trying to deliver the message at the moment. Could you copy and paste your message into a mail client? Sorry for the inconvenience.",
     "something_went_wrong": "Something went wrong!"

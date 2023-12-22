@@ -95,8 +95,42 @@ function emailPayload(body: MessagePayload): MailgunMessageData {
   };
 }
 
+async function earlyRejectCaptcha(token: string) {
+  const secretKey = process.env.RECAPTCHA_SECRET_KEY || "";
+  const requestBody = new URLSearchParams();
+  requestBody.set("secret", secretKey);
+  requestBody.set("response", token);
+  const body = requestBody.toString();
+  const response = await $fetch<{ success: Boolean }>(
+    "https://www.google.com/recaptcha/api/siteverify",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: body,
+    }
+  );
+  console.log(body);
+  console.log(response);
+  if (response.success) {
+    return response.success;
+  }
+  return false;
+}
+
 export default defineEventHandler(async (event) => {
   const body = await flattenMultipartData(event);
+
+  console.log(body);
+
+  const result = await earlyRejectCaptcha(body.captcha);
+  if (!result) {
+    throw createError({
+      message: "The captcha validation is stopping your request.",
+      status: 420,
+    });
+  }
 
   if (!validateBody(body)) {
     throw createError({
