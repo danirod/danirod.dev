@@ -13,6 +13,9 @@
   --menu-hover: var(--menu-border);
   --link-color: #0066cc;
 
+  --subtle-disabled-background: rgb(232, 232, 232);
+  --subtle-disabled-foreground: rgb(99, 106, 111);
+
   @media (prefers-color-scheme: dark) {
     --text-color: #f0f0f0;
     --background-color: #202020;
@@ -23,6 +26,9 @@
     --link-color: #3ae3ff;
     --menu-background: #202020;
     --menu-border: #3d3d3d;
+
+  --subtle-disabled-foreground: rgb(208, 205, 205);
+  --subtle-disabled-background: rgb(57, 65, 70);
   }
 }
 

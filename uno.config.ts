@@ -63,6 +63,8 @@ export default defineConfig({
       menuBg: "var(--menu-background)",
       menuHover: "var(--menu-hover)",
       menuBorder: "var(--menu-border)",
+      subtleDisabledForeground: "var(--subtle-disabled-foreground)",
+      subtleDisabledBackground: "var(--subtle-disabled-background)",
     },
     fontSize: {},
   },

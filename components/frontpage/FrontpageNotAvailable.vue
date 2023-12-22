@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gray-300 text-accent-contrast font-size-hero lh-hero text-center"
+    class="bg-subtle-disabled-background c-subtle-disabled-foreground font-size-hero lh-hero text-center"
   >
     <div class="container py3 sm:flex flex-justify-between flex-items-center">
       <p>{{ $t("frontpage_blocks.not_available.currently_not_available") }}</p>
