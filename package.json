@@ -17,8 +17,8 @@
     "@nuxtjs/i18n": "^8.0.0-rc.5",
     "@nuxtjs/plausible": "^0.2.3",
     "@nuxtjs/robots": "^3.0.0",
-    "@unocss/nuxt": "^0.57.2",
-    "@unocss/postcss": "^0.57.3",
+    "@unocss/nuxt": "^0.58.5",
+    "@unocss/postcss": "^0.58.5",
     "nuxt": "^3.8.1",
     "prettier": "^3.2.5",
     "vue": "^3.3.8",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "form-data": "^4.0.0",
-    "mailgun.js": "^9.3.0",
+    "mailgun.js": "^10.2.1",
     "vue-recaptcha": "^3.0.0-alpha.6"
   }
 }
