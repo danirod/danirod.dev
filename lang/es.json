@@ -53,7 +53,9 @@
       "email": {
         "get_back_to_you": "Te responderé de vuelta en horas de trabajo normales (franja horaria peninsular)",
         "my_linkedin_profile": "mi perfil de LinkedIn",
+        "my_malt_profile": "mi perfil de Malt",
         "or_send_me_a_message": "o contactarme por mensajería desde",
+        "or": "o",
         "you_can_contact_me": "Puedes enviarme directamente un e-mail a"
       },
       "get_in_touch": "¡Hora de ponerse en contacto!"

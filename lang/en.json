@@ -53,6 +53,8 @@
       "email": {
         "get_back_to_you": "I'll get back to you during normal business hours ({'@'} UTC+1 time zone)",
         "my_linkedin_profile": "my LinkedIn profile",
+        "my_malt_profile": "my Malt profile",
+        "or": "or",
         "or_send_me_a_message": "or send me a message through",
         "you_can_contact_me": "You can contact me by e-mail directly at"
       },

@@ -16,8 +16,12 @@
           {{ $t("frontpage_blocks.contact.email.or_send_me_a_message") }}
           <a href="https://linkedin.com/in/danirod">{{
             $t("frontpage_blocks.contact.email.my_linkedin_profile")
+          }}</a>
+          {{ $t("frontpage_blocks.contact.email.or") }}
+          <a href="https://www.malt.es/profile/danirod">{{
+            $t("frontpage_blocks.contact.email.my_malt_profile")
           }}</a
-          >. {{ $t("frontpage_blocks.contact.email.get_back_to_you") }}.
+          >, {{ $t("frontpage_blocks.contact.email.get_back_to_you") }}.
         </p>
 
         <p class="lg:lh-7 2xl:lh-9">
