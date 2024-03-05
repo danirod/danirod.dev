@@ -42,10 +42,6 @@
   "frontpage_blocks": {
     "available": {
       "available_for_projects": "Available for projects!",
-      "send_mail": "Drop me an e-mail",
-      "connect_linkedin": "conect on LinkedIn",
-      "or": "or",
-      "connect_malt": "send a proposal through Malt"
     },
     "contact": {
       "dont_use_form": "Don't want to use the web form?",

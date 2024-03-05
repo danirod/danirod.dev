@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container my-5 sm:flex gap-4 md:gap-6 lg:gap-15 xl:gap-20 2xl:gap-30 flex-items-center md:flex-row-reverse"
+    class="container my-6 md:my-9 lg:my-12 xl:my-15 2xl:my-18 sm:flex gap-4 md:gap-6 lg:gap-15 xl:gap-20 2xl:gap-30 flex-items-center md:flex-row-reverse"
   >
     <figure class="mx-auto md:block w-30 md:w-32 lg:w-55 xl:w-70 2xl:w-80">
       <NuxtPicture
