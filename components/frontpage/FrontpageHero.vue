@@ -30,6 +30,8 @@
       <p class="font-size-hero font-500 lh-hero mt-3 md:mt-6">
         {{ $t("frontpage_blocks.hero.lead") }}
       </p>
+
+      <HeroAvailable />
     </div>
   </div>
 </template>

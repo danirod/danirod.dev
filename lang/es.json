@@ -41,24 +41,21 @@
   },
   "frontpage_blocks": {
     "available": {
-      "currently_available": "¡Estoy disponible para nuevos proyectos!",
-      "get_in_touch": "Ponte en contacto"
+      "available_for_projects": "¡Disponible para proyectos!",
+      "send_mail": "Envíame un e-mail",
+      "connect_linkedin": "conecta en LinkedIn",
+      "or": "o",
+      "connect_malt": "envíame tu propuesta por Malt"
     },
     "contact": {
-      "discord": {
-        "discord_user": "¿Utilizas Discord? También puedes mandar una solicitud de contacto a",
-        "talk_via_dm": "para que podamos hablar mediante mensaje privado",
-        "unsolicited": "(Solo recuerda recordarme que te envíe desde esta web porque suelo recibir mensajes no solicitados.)"
-      },
-      "email": {
-        "get_back_to_you": "Te responderé de vuelta en horas de trabajo normales (franja horaria peninsular)",
-        "my_linkedin_profile": "mi perfil de LinkedIn",
-        "my_malt_profile": "mi perfil de Malt",
-        "or_send_me_a_message": "o contactarme por mensajería desde",
-        "or": "o",
-        "you_can_contact_me": "Puedes enviarme directamente un e-mail a"
-      },
-      "get_in_touch": "¡Hora de ponerse en contacto!"
+      "dont_use_form": "¿No quieres usar el formulario?",
+      "get_back_to_you": "Te responderé de vuelta en horas de trabajo normales (franja horaria peninsular)",
+      "get_in_touch": "¡Hora de ponerse en contacto!",
+      "my_linkedin_profile": "mi perfil de LinkedIn",
+      "my_malt_profile": "mi perfil de Malt",
+      "or": "o",
+      "or_send_me_a_message": "o contactarme por mensajería desde",
+      "you_can_contact_me": "Puedes enviarme directamente un e-mail a"
     },
     "featured_skills": {
       "go": {
@@ -86,13 +83,9 @@
     },
     "hero": {
       "image_alt": "Un selfie de Dani en su ordenador",
-      "lead": "Haciendo del mundo un lugar mejor creando grandes productos y aplicaciones que proporcionen valor. Con el poder de la Web, puedo ayudarte a ti o a tu empresa a ofrecer grandes experiencias online a tus usuarios y a proporcionar servicios a tus clientes.",
+      "lead": "Centrado en la creación de aplicaciones y soluciones web que aporten valor. Puedo ayudarte a ofrecer grandes experiencias online a tus usuarios o a ofertar tus servicios o negocios a tus clientes.",
       "subtitle": "Desarrollador Web Freelance",
       "title": "Dani Rodríguez"
-    },
-    "not_available": {
-      "currently_not_available": "Ups, no disponible para proyectos ahora mismo.",
-      "try_anyway": "Contactar"
     },
     "questions": {
       "agreement": {

@@ -11,26 +11,18 @@
       </div>
       <div class="flex-1 font-size-copy lh-copy text-copy">
         <p>
-          {{ $t("frontpage_blocks.contact.email.you_can_contact_me") }}
+          <strong>{{ $t("frontpage_blocks.contact.dont_use_form") }}</strong>
+          {{ $t("frontpage_blocks.contact.you_can_contact_me") }}
           <a href="mailto:dani@danirod.es">dani@danirod.es</a>
-          {{ $t("frontpage_blocks.contact.email.or_send_me_a_message") }}
+          {{ $t("frontpage_blocks.contact.or_send_me_a_message") }}
           <a href="https://linkedin.com/in/danirod">{{
-            $t("frontpage_blocks.contact.email.my_linkedin_profile")
+            $t("frontpage_blocks.contact.my_linkedin_profile")
           }}</a>
-          {{ $t("frontpage_blocks.contact.email.or") }}
+          {{ $t("frontpage_blocks.contact.or") }}
           <a href="https://www.malt.es/profile/danirod">{{
-            $t("frontpage_blocks.contact.email.my_malt_profile")
+            $t("frontpage_blocks.contact.my_malt_profile")
           }}</a
-          >, {{ $t("frontpage_blocks.contact.email.get_back_to_you") }}.
-        </p>
-
-        <p class="lg:lh-7 2xl:lh-9">
-          <small class="font-size-4 lg:font-size-4.5 2xl:font-size-5.5">
-            {{ $t("frontpage_blocks.contact.discord.discord_user") }}
-            <strong class="font-600">@danirod</strong>
-            {{ $t("frontpage_blocks.contact.discord.talk_via_dm") }}.
-            {{ $t("frontpage_blocks.contact.discord.unsolicited") }}
-          </small>
+          >, {{ $t("frontpage_blocks.contact.get_back_to_you") }}.
         </p>
       </div>
     </div>

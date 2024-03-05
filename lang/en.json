@@ -41,24 +41,21 @@
   },
   "frontpage_blocks": {
     "available": {
-      "currently_available": "And I am currently available for new projects!",
-      "get_in_touch": "Let's get in touch"
+      "available_for_projects": "Available for projects!",
+      "send_mail": "Drop me an e-mail",
+      "connect_linkedin": "conect on LinkedIn",
+      "or": "or",
+      "connect_malt": "send a proposal through Malt"
     },
     "contact": {
-      "discord": {
-        "discord_user": "Discord user? Send a contact request to",
-        "talk_via_dm": "and we can talk via DM",
-        "unsolicited": "(Make sure to remind me that you come from this site because I receive many unsolicited communications over there.)"
-      },
-      "email": {
-        "get_back_to_you": "I'll get back to you during normal business hours ({'@'} UTC+1 time zone)",
-        "my_linkedin_profile": "my LinkedIn profile",
-        "my_malt_profile": "my Malt profile",
-        "or": "or",
-        "or_send_me_a_message": "or send me a message through",
-        "you_can_contact_me": "You can contact me by e-mail directly at"
-      },
-      "get_in_touch": "Let's get in touch!"
+      "dont_use_form": "Don't want to use the web form?",
+      "get_back_to_you": "I'll get back to you during normal business hours ({'@'} UTC+1 time zone)",
+      "get_in_touch": "Let's get in touch!",
+      "my_linkedin_profile": "my LinkedIn profile",
+      "my_malt_profile": "my Malt profile",
+      "or": "or",
+      "or_send_me_a_message": "or send me a message through",
+      "you_can_contact_me": "You can also contact me by e-mail directly at"
     },
     "featured_skills": {
       "go": {
@@ -86,13 +83,9 @@
     },
     "hero": {
       "image_alt": "A portrait of Dani on his computer",
-      "lead": "Making the world better by creating great products and apps that provide value. Through the power of the Web, I can help you or your company offer great experiences to your users and provide services to your customers.",
+      "lead": "Focused on creating web applications and services that provide value. I can help you offer great online experiences to your users or promote your services or business to your customers.",
       "subtitle": "Freelance Web Developer",
       "title": "Dani Rodríguez"
-    },
-    "not_available": {
-      "currently_not_available": "Oh no, not available for projects at the moment.",
-      "try_anyway": "Get in touch"
     },
     "questions": {
       "agreement": {
