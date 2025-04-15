@@ -41,7 +41,7 @@
   },
   "frontpage_blocks": {
     "available": {
-      "available_for_projects": "¡Disponible para proyectos!",
+      "available_for_projects": "¡Disponible para proyectos!"
     },
     "contact": {
       "dont_use_form": "¿No quieres usar el formulario?",
@@ -82,6 +82,10 @@
       "lead": "Centrado en la creación de aplicaciones y soluciones web que aporten valor. Puedo ayudarte a ofrecer grandes experiencias online a tus usuarios o a ofertar tus servicios o negocios a tus clientes.",
       "subtitle": "Desarrollador Web Freelance",
       "title": "Dani Rodríguez"
+    },
+    "not_available": {
+      "currently_not_available": "No disponible en este momento",
+      "try_anyway": "Contactar igualmente"
     },
     "questions": {
       "agreement": {

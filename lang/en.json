@@ -41,7 +41,11 @@
   },
   "frontpage_blocks": {
     "available": {
-      "available_for_projects": "Available for projects!",
+      "available_for_projects": "Available for projects!"
+    },
+    "not_available": {
+      "currently_not_available": "Currently not available for projects",
+      "try_anyway": "Get in touch anyway"
     },
     "contact": {
       "dont_use_form": "Don't want to use the web form?",

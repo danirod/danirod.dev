@@ -31,7 +31,7 @@
         {{ $t("frontpage_blocks.hero.lead") }}
       </p>
 
-      <HeroAvailable />
+      <HeroNotAvailable />
     </div>
   </div>
 </template>
