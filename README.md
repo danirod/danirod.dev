@@ -18,10 +18,10 @@ Powered by Nuxt 3 and UnoCSS.
 
 ## Commands
 
-- Setup: `npm install`
-- Run the server: `npm run dev`
-- Build the app: `npm run build`
-- Test in production: `npm run preview`
+- Setup: `pnpm install`
+- Run the server: `pnpm dev`
+- Build the app: `pnpm build`
+- Test in production: `pnpm preview`
 
 ## Development notes
 
