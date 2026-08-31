@@ -2,13 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: [
-    "@nuxtjs/google-fonts",
+    "@nuxt/fonts",
     "@unocss/nuxt",
     "@nuxtjs/i18n",
     "@nuxtjs/plausible",
     "@nuxtjs/robots",
     "@nuxt/image",
-    "vue-recaptcha/nuxt",
   ],
   runtimeConfig: {
     public: {
@@ -53,26 +52,31 @@ export default defineNuxtConfig({
       useCookie: false,
       redirectOn: "root",
     },
-    langDir: "lang",
+    langDir: "locales",
     locales: [
       {
         code: "es",
-        iso: "es",
+        language: "es",
         name: "Español",
         file: "es.json",
       },
       {
         code: "en",
-        iso: "en",
+        language: "en",
         name: "English",
         file: "en.json",
       },
     ],
   },
-  googleFonts: {
-    families: {
-      Inter: [400, 500, 600, 700],
-    },
+  fonts: {
+    families: [
+      {
+        name: "Inter",
+        provider: "google",
+        weights: [400, 500, 600, 700],
+        styles: ["normal"],
+      },
+    ],
   },
   plausible: {
     apiHost: "https://danirod.dev",

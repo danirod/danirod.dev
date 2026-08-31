@@ -1,0 +1,42 @@
+allowBuilds:
+  esbuild: true
+  vue-demi: true
+minimumReleaseAgeExclude:
+  - webpack@5.94.0 || 5.104.0 || 5.104.1
+  - cross-spawn@7.0.5
+  - brace-expansion@2.0.2 || 2.0.3 || 2.1.2 || 2.1.3 || 2.1.4
+  - glob@10.5.0
+  - js-yaml@4.1.1 || 4.1.2 || 4.3.0 || 4.3.1
+  - minimatch@5.1.7 || 5.1.8 || 9.0.6 || 9.0.7
+  - serialize-javascript@7.0.3 || 7.0.5
+  - picomatch@2.3.2
+  - yaml@2.8.3
+  - lodash@4.17.23 || 4.17.24
+  - esbuild@0.28.1
+overrides:
+  brace-expansion@>=2.0.0 <2.0.3: ^2.0.3
+  brace-expansion@>=2.0.0 <2.1.2: ^2.1.2
+  brace-expansion@>=2.0.0 <2.1.3: ^2.1.3
+  brace-expansion@>=2.0.0 <2.1.4: ^2.1.4
+  brace-expansion@>=2.0.0 <=2.0.1: ^2.0.2
+  cross-spawn@>=7.0.0 <7.0.5: ^7.0.5
+  esbuild@>=0.27.3 <0.28.1: ^0.28.1
+  glob@>=10.2.0 <10.5.0: ^10.5.0
+  js-yaml@>=4.0.0 <4.1.1: ^4.1.1
+  js-yaml@>=4.0.0 <4.3.0: ^4.3.0
+  js-yaml@>=4.0.0 <4.3.1: ^4.3.1
+  js-yaml@>=4.0.0 <=4.1.1: ^4.1.2
+  lodash@<=4.17.23: ^4.17.24
+  lodash@>=4.0.0 <=4.17.22: ^4.17.23
+  lodash@>=4.0.0 <=4.17.23: ^4.17.24
+  minimatch@>=5.0.0 <5.1.7: ^5.1.7
+  minimatch@>=5.0.0 <5.1.8: ^5.1.8
+  minimatch@>=9.0.0 <9.0.6: ^9.0.6
+  minimatch@>=9.0.0 <9.0.7: ^9.0.7
+  picomatch@<2.3.2: ^2.3.2
+  serialize-javascript@<=7.0.2: ^7.0.3
+  serialize-javascript@>=5.0.0 <7.0.5: ^7.0.5
+  webpack@>=5.0.0-alpha.0 <5.94.0: ^5.94.0
+  webpack@>=5.49.0 <5.104.0: ^5.104.0
+  webpack@>=5.49.0 <=5.104.0: ^5.104.1
+  yaml@>=2.0.0 <2.8.3: ^2.8.3

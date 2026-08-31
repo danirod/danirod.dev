@@ -1,8 +1,6 @@
 <script setup>
-import { useChallengeV3 } from "vue-recaptcha";
 const { t } = useI18n();
-useRecaptchaProvider();
-const { execute } = useChallengeV3("contact");
+const { execute } = useRecaptcha();
 
 const disabled = ref(false);
 const error = ref(null);
@@ -13,7 +11,7 @@ async function onMessage(payload) {
   error.value = null;
   done.value = false;
 
-  const captcha = await execute();
+  const captcha = await execute("contact");
   payload.set("captcha", captcha);
   try {
     const response = await $fetch("/api/contact", {
