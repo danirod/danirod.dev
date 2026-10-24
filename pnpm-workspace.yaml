@@ -7,17 +7,10 @@ allowBuilds:
 minimumReleaseAge: 10080
 minimumReleaseAgeExcludePrune: true
 minimumReleaseAgeExclude:
-  - webpack@5.94.0 || 5.104.0 || 5.104.1
-  - cross-spawn@7.0.5
-  - brace-expansion@2.0.2 || 2.0.3 || 2.1.2 || 2.1.3 || 2.1.4
   - glob@10.5.0
-  - js-yaml@4.1.1 || 4.1.2 || 4.3.0 || 4.3.1
-  - minimatch@5.1.7 || 5.1.8 || 9.0.6 || 9.0.7
-  - serialize-javascript@7.0.3 || 7.0.5
   - picomatch@2.3.2
-  - yaml@2.8.3
-  - lodash@4.17.23 || 4.17.24
-  - esbuild@0.28.1
+  - serialize-javascript@7.1.3
+  - fast-uri@3.1.9
 overrides:
   brace-expansion@>=2.0.0 <2.0.3: ^2.0.3
   brace-expansion@>=2.0.0 <2.1.2: ^2.1.2
