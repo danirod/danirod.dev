@@ -1,6 +1,8 @@
 ---
 name: update-dependencies
-description: Review, update and verify Nuxt application dependencies and pnpm for danirod.dev, and report Node.js runtime updates without applying them. Use for dependency maintenance in this repository.
+description: >
+  Review, update and verify application dependencies.
+  Use for dependency maintenance in this repository.
 ---
 
 Run commands and resolve project paths from the repository root.
@@ -9,7 +11,7 @@ Run commands and resolve project paths from the repository root.
 
 Review these dependency sources:
 
-- `mise.toml`: pnpm version and the current Node.js runtime (read-only).
+- `mise.toml`: Node.js and pnpm versions.
 - `package.json`: Direct dependencies, scripts and the `packageManager` pin.
 - `pnpm-lock.yaml`: Resolved dependencies and peer dependency relationships.
 - `pnpm-workspace.yaml`: Release cooldown, exceptions, overrides and allowed
@@ -18,9 +20,10 @@ Review these dependency sources:
 
 Record the configured Node.js version and check the official Node.js release
 schedule and releases for its support status and available newer versions.
-Distinguish updates within the current release line from newer LTS and Current
-lines. Node.js is report-only: do not change the runtime or its pins through
-this skill, even if the current line is unsupported or is not LTS.
+Distinguish minor and patch updates within the configured major from newer LTS
+and Current majors. Include updates within the configured major in the
+inventory; newer majors are report-only, even if the configured major is
+unsupported or is not LTS.
 
 Check usage in `nuxt.config.ts`, `uno.config.ts`, Vue components, layouts,
 composables and `server/` before changing dependencies. Account for Nuxt modules,
@@ -36,17 +39,18 @@ existing overrides and exceptions before changing them.
 
 # Stage 2: Plan
 
-- Exclude Node.js runtime upgrades from the update plan. Runtime changes need
-  a separate plan and user validation. If a dependency or pnpm upgrade requires
-  a newer Node.js version, choose the latest eligible compatible release or
-  defer it and report the runtime requirement; do not upgrade Node.js to unblock
-  it.
+- Include stable Node.js minor and patch updates within the major configured
+  at the start of the task. For example, Node.js 26.x may move to a newer 26.x,
+  but not to 28.x. Major upgrades need a separate plan and user validation.
+  If a dependency or pnpm upgrade requires a newer Node.js major, choose the
+  latest eligible release compatible with the configured major or defer it and
+  report the runtime requirement; do not change the Node.js major to unblock it.
 - For all other dependencies and tooling actually used by the project, target
   the latest eligible stable releases, including majors, unless the user
   narrows the scope. This includes build tools and compilers. Honor explicit
   exclusions without narrowing unrelated updates. Exclude prereleases by
   default.
-- Review direct dependency changelogs and pnpm release notes before
+- Review direct dependency changelogs and Node.js/pnpm release notes before
   updating and identify required adaptations. Transitive dependency changelog
   review is intentionally omitted. Use official release notes and migration
   guides.
@@ -66,8 +70,10 @@ existing overrides and exceptions before changing them.
 - Adapt Nuxt modules, UnoCSS/PostCSS configuration and application code where
   required by package changes.
 - Synchronize pnpm versions in `mise.toml`, `package.json` and the install
-  command in `vercel.json`, leaving Node.js pins unchanged. Check compatibility
-  with the existing Node.js runtime and Vercel's supported runtime versions.
+  command in `vercel.json`. Update the Node.js pin in `mise.toml` to the selected
+  minor or patch release within the configured major, and synchronize any other
+  runtime pins present. Check the selected runtime against dependency engine
+  requirements and Vercel's supported runtime versions.
 - Prefer `pnpm audit --fix=update` for reviewed security fixes. In pnpm 11 this
   updates vulnerable packages in the lockfile instead of adding the dependency
   overrides produced by plain `pnpm audit --fix`. With `minimumReleaseAge` set,
@@ -134,4 +140,4 @@ security fixes and their advisory IDs, cooldown exceptions added or pruned,
 remaining audit findings, and checks that passed, failed or could not run.
 Report the current Node.js version and support status, available newer versions
 and any updates deferred because of their runtime requirements. Make clear that
-Node.js upgrades require separate planning and user validation.
+Node.js major upgrades require separate planning and user validation.
