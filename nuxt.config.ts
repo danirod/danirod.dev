@@ -30,14 +30,11 @@ export default defineNuxtConfig({
     quality: 85,
   },
   robots: {
-    rules: {
-      UserAgent: "*",
-      Disallow: [
-        "/contact/success",
-        "/en/contact/success",
-        "/es/contact/success",
-      ],
-    },
+    disallow: [
+      "/contact/success",
+      "/en/contact/success",
+      "/es/contact/success",
+    ],
   },
   postcss: {
     plugins: {
