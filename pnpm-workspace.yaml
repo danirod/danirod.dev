@@ -7,11 +7,13 @@ allowBuilds:
 minimumReleaseAge: 10080
 minimumReleaseAgeExcludePrune: true
 minimumReleaseAgeExclude:
+  - node-forge@1.4.2
   - glob@10.5.0
   - picomatch@2.3.2
   - serialize-javascript@7.1.3
   - fast-uri@3.1.9
 overrides:
+  node-forge@<=1.4.0: ^1.4.2
   brace-expansion@>=2.0.0 <2.0.3: ^2.0.3
   brace-expansion@>=2.0.0 <2.1.2: ^2.1.2
   brace-expansion@>=2.0.0 <2.1.3: ^2.1.3
