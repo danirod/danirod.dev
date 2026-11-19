@@ -2,7 +2,7 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@12.19.0",
+  "packageManager": "pnpm@12.20.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -22,7 +22,7 @@
     "@unocss/nuxt": "^66.12.0",
     "@unocss/postcss": "^66.12.0",
     "nuxt": "^4.6.4",
-    "prettier": "^3.9.10",
+    "prettier": "^3.10.0",
     "unocss": "66.12.0",
     "vue": "^3.5.45",
     "vue-router": "^5.5.0"
