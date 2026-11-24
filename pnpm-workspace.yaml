@@ -10,6 +10,7 @@ minimumReleaseAgeExclude:
   - picomatch@2.3.2
   - fast-uri@3.1.9
 overrides:
+  archiver@8.0.0>readdir-glob: 4.0.0
   node-forge@<=1.4.0: ^1.4.2
   brace-expansion@>=2.0.0 <2.0.3: ^2.0.3
   brace-expansion@>=2.0.0 <2.1.2: ^2.1.2
